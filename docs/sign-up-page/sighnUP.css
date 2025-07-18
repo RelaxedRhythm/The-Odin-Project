@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 50vw;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 90%;
+}
+.sidebar{
+    width: 40rem;
+    /* height: 100vh; */
+    flex: 1;
+    flex-direction: column;
+
+}
+.image{
+    width: 33vw;
+    height: 100%;
+    /* display: inline; */
+}
+#logoDiv{
+    display: flex;
+    width:33vw;
+    margin-top: 20%;
+    position: fixed;
+    background-color: #d6d3ce9f;
+    align-items: center;
+    justify-content:center;
+}
+#logo{
+    width: 79px;
+    height: 70px;
+    /* background-color: black; */
+    display: inline;
+}
+#logoText{
+    display: inline;
+    font-size: 40px;
+    color: aliceblue;
+    font-family:cursive;
+}
+.main{
+    /* display: inline;
+     */
+     margin-top: 8%;
+     flex: 1;
+     font-size: 18px;
+     /* display: flex; */
+}
+.form{
+    background-color: rgba(243, 240, 237, 0.834);
+    padding: 20px;
+    
+}
+form{
+    padding: 10px;
+    /* display: inline-block; */
+
+}
+/* input{
+    margin: 10px;
+    width: 120px;
+    /* display: inline-block; */
+    /* flex: 1; */
+
+label{
+    font-weight: 500;
+    display: block;
+    /* font-size: var(--font-size-form); */
+}
+
+input{
+    border: 1px solid var(--field-border-color);
+    border-radius: 5px;
+    width: 10rem;
+    height: 30px;
+}
+.input{
+    border:none;
+    width: 24vw;
+    flex: 1;
+    padding-left:18px ;
+    display: inline;
+    margin-left: 14px;
+    margin-right: 1px;
+}
+.mainField{
+    /* display: flex; */
+    flex-direction: column;
+    border: none;
+    width: 58vw;
+    font-size: small;
+}
+button{
+    background-color: rgb(92, 150, 91);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 20px;
+    
+}
+.footer{
+    padding-left: 20px;
+    margin-left: 20px;
+    /* display: inline; */
+}
+#password:invalid{
+    border: 1px solid ;
+    border-color: red;
+}
+input:hover,input:focus{
+    box-shadow: 2px 2px 4px lightgrey;
+    
+}
