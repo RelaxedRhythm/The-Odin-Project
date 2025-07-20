@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link href="calculator.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <h1>Calculator</h1>
+    <div class="container">
+        <p class="calculations"></p>
+        <p><button onclick="updateCalc('1')">1</button>
+            <button onclick="updateCalc('2')">2</button>
+            <button onclick="updateCalc('3')">3</button>
+            <button onclick="updateCalc('+')" class="operations">+</button>
+        </p>
+        <p><button onclick="updateCalc('4')">4</button>
+            <button onclick="updateCalc('5')">5</button>
+            <button onclick="updateCalc('6')">6</button>
+            <button onclick="updateCalc('-')" class="operations">-</button>
+        </p>
+        <p><button onclick="updateCalc('7')">7</button>
+            <button onclick="updateCalc('8')">8</button>
+            <button onclick="updateCalc('9')">9</button>
+            <button onclick="updateCalc('/')" class="operations">/</button>
+        </p>
+        <p>
+            <button onclick="updateCalc('0')">0</button>
+            <button onclick="updateCalc('.')">.</button>
+            <button onclick=" calc=eval(calc);
+                displayCalc();
+                console.log(calc);
+                localStorage.setItem('calc',JSON.stringify(calc));
+                ">=</button>
+            <button onclick="updateCalc('*')" class="operations">*</button>
+        </p>
+        <p>
+            <button onclick="
+                calc='';
+                displayCalc();
+                localStorage.setItem('calc',JSON.stringify(calc)); ">Clear</button>
+        </p>
+
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>

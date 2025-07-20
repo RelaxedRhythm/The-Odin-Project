@@ -1,21 +1,64 @@
-body{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    /* background-color:rgb(190, 116, 128); */
+    background:rgb(220, 142, 155);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 600px;
+    font-family: "winky rough";
+    /* color: white; */
 
 }
-button{padding: 15px 20px;
- border-radius: 40px;
- background-color: rgb(43, 43, 43);
- border: none;
- color: white;
 
- }
- .operations{
-    background-color:rgb(174, 114, 1);
- }
-.calculations{
- font-family: arial;
- font-size: 30px;
- color: white;
- margin-left: 10px;
- margin-bottom: 0px;
+h1 {
+    color: rgb(237, 193, 200);
+    font-size: 58px;
+    margin-left: 60px;
+
+}
+
+.container {
+    border: 8px solid rgb(249, 230, 233);
+    width: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: pink;
+}
+
+p {
+    border-radius: 18px;
+    /* width: 50px; */
+}
+
+button {
+    padding: 15px 20px;
+    border-radius: 90px;
+    background-color:rgb(201, 122, 135);
+    border: none;
+    color: rgb(244, 228, 230);
+    margin-left: 14px;
+    font-size: 18px;
+    line-height: 17px;
+}
+
+.operations {
+    background-color: rgb(179, 33, 82);
+}
+
+.calculations {
+    font-family: arial;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-bottom: 0px;
+    width: 230px;
+    padding: 14px 22px;
+    border: 5px solid;
 }
