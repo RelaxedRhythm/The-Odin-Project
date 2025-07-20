@@ -1,23 +1,35 @@
 let container=document.querySelector(".container");
-console.log(container);
- document.querySelector("body").innerHTML+=`<button class="grid">Get Grid</button>
-    <button class="reset">reset</button>`;
-// var n=64;
+function getRandomColor(){
+    var red=Math.random()*255;
+    var green=Math.random()*255;
+    var blue=Math.random()*255;
+    const color=`rgb(${red},${green},${blue})`
+    return color;
+}
+
 function getGrid(n){
+    container.innerHTML="";
+    const cubeSize=Math.floor(Math.min(container.clientWidth, container.clientHeight) / n);
     for(let i=1;i<=(n*n);i++){
-        let html=`<div class="grid-cell"></div>`
-        document.querySelector(".container").innerHTML+=html;
-        // container.innerHtml+=html;
+        const cube = document.createElement('div');
+        cube.className = 'grid-cell';
+        cube.style.width = `${cubeSize}px`;
+        cube.style.height = `${cubeSize}px`;
+        cube.addEventListener("mouseover", () => {
+    cube.style.backgroundColor = getRandomColor();
+  });
+        container.appendChild(cube);
     }
-    // document.querySelector(".container").innerHtml+=html;
 }
 function reset(){
-    let html=``;
-    container.innerHTML+=html;
     let n=parseInt(prompt("Enter the number of rows in the grid"));
-    getGrid(n)
+    if(n>0 && n<100){
+        getGrid(n)
+    }
+    else{
+        alert("Enter a valid number")
+    }
 }
+getGrid(16)
 document.querySelector(".grid").addEventListener("click",()=>getGrid(16))
-document.querySelector(".reset").addEventListener("click",reset)
-// getGrid(64);
-// getGrid(64)
+document.querySelector(".reset").addEventListener("click",reset);
