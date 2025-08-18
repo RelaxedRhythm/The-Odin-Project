@@ -1,0 +1,41 @@
+/* Background */
+body{
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  z-index: 1;
+  /* background:linear-gradient(to right, #cee3f6, #5472b9);; */
+  /* background: url('icons/image.png') ; */
+}
+.form-style{
+    margin-right: 20px;
+    width: 50vw;
+}
+ .search{
+    width: 40vw;
+ }
+main {
+  min-height: calc(100vh - 70px); /* full height minus navbar (adjust 70px if navbar taller) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*center vertically*/
+  text-align: center;
+  width: 100%;
+}
+/* Cards */
+.card {
+    /* background: linear-gradient(to right, #4facfe, #00f2fe); */
+  border-radius: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Weather icons
+.weather-icon {
+  width: 70px;
+  margin-bottom: 10px;
+} */
